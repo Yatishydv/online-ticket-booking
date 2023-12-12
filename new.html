@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooKKar</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .head{
+            /* background-color: rgb(19, 52, 216); */
+
+            background-image: url("indianculture.jpg");
+            background-size: 300px;
+
+        }
+        .left{
+            display: flex;
+            height: 100px;
+            width:auto;
+            /* background-color: blue; */
+        }
+        .left img{
+            height: auto;
+            width: auto;
+            margin-top: 0px;
+        }
+        .left input[type="text"]{
+            width: 400px;
+            height: 20px;
+            margin-top: 40px;
+        }
+        .options{
+            color: aliceblue;
+            display: flex;
+            background-color: rgba(234, 255, 0, 0.352);
+
+        }
+        .click{
+            margin-right: 5%;
+            margin-left: 12%;
+            font-size: medium;
+        }
+        .click:hover{
+            color: rgba(34, 255, 0, 0.783);
+        }
+        .options a{
+            margin-left: 13%;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .places{
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            background-color: rgba(245, 183, 106, 0.219);
+            margin: 2%;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.772);
+        }
+        .places h3{
+            color: white;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            border-radius: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        .card img{
+            width: 16%;
+            margin-block: 10px;
+            border-radius: 5px;
+            height: 30%;
+            margin: 8px;
+        }
+        .movies{
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            background-color: rgba(193, 255, 49, 0.203);
+            margin: 2%;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.772);
+        }
+        .movies h3{
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .matches h3{
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .matches{
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            background-color: rgba(49, 231, 255, 0.203);
+            margin: 2%;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.772);
+        }
+        footer {
+            background-color: #f7d19b6e;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-links a img {
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
+            
+        }
+        .fot img{
+            height: 50px;
+
+        }
+        hr{
+            width: 200px;
+            border-color: black;
+            height: 3px;
+            color: black;
+            background-color: black;
+            border-radius: 100px;
+
+        }
+        .click:hover{
+            /* transition:steps(2s); */
+            transform: scale(1.1);
+            color: purple;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="left">
+            <img src="bookkar.png" alt="">
+            <input type="text" placeholder="Search for Places, Movies, Matches and more....">
+        </div>
+    </div>
+    <div class="options">
+        <a href="places.html"><div class="click">Places</div></a>
+        <a href="movies.html"><div class="click">Movies</div></a>
+        <a href="matches.html"><div class="click">Matches</div></a>
+        <a href="about.html"><div class="click">AboutUs</div></a>
+    </div>
+    <div class="places">
+        <h3>Recommanded Places</h3>
+        <div class="card">
+            <a href="places.html"><img src="manali1.jpg" alt=""></a>
+            <a href="places.html"><img src="jaipur.jpg" alt=""></a>
+            <a href="places.html"><img src="haryana.jpg" alt=""></a>
+            <a href="places.html"><img src="delhi.jpg" alt=""></a>
+            <a href="places.html"><img src="simla.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="movies">
+        <h3>Recommanded movies</h3>
+        <div class="card">
+            <a href="movies.html"><img src="latestmovie1.jpg" alt=""></a>
+            <a href="movies.html"><img src="tooly1.jpg" alt=""></a>
+            <a href="movies.html"><img src="holly1.jpg" alt=""></a>
+            <a href="movies.html"><img src="holly2.jpg" alt=""></a>
+            <a href="movies.html"><img src="holly4.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="matches">
+        <h3>Matches</h3>
+        <div class="card">
+            <a href="matches.html"><img src="football.png" alt=""></a>
+            <a href="matches.html"><img src="cricket.jpg" alt=""></a>
+            <a href="matches.html"><img src="olympics.jpg" alt=""></a>
+        </div>
+    </div>
+    <footer>
+        <div class="fot"><a href=""><img src="bookkar.png" alt=""></a></div>
+        <hr>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yatish_ydv" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/yatishkumar-" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><img src="twit.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>

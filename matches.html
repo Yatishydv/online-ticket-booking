@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <style>
+           body{
+            background-color: black;
+        }
+        .head{
+            /* background-color: rgb(19, 52, 216); */
+
+            background-image: url("indianculture.jpg");
+            background-size: 300px;
+
+        }
+        .left{
+            display: flex;
+            height: 100px;
+            width:auto;
+            /* background-color: blue; */
+        }
+        .left img{
+            height: auto;
+            width: auto;
+            margin-top: 0px;
+        }
+        .left input[type="text"]{
+            width: 400px;
+            height: 20px;
+            margin-top: 40px;
+        }
+        .options{
+            color: aliceblue;
+            display: flex;
+            background-color: rgba(234, 255, 0, 0.352);
+        }
+        .click{
+            margin-right: 5%;
+            margin-left: 12%;
+            font-size: medium;
+        }
+        .click:hover{
+            color: rgba(34, 255, 0, 0.783);
+        }
+        .options a{
+            margin-left: 9%;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        footer {
+            background-color: #f7d19b6e;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-links a img {
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
+            
+        }
+        .fot img{
+            height: 50px;
+
+        }
+        hr{
+            width: 200px;
+            border-color: black;
+            height: 3px;
+            color: black;
+            background-color: black;
+            border-radius: 100px;
+
+        }
+        .headp{
+            background-color: #d5d0bc;
+            text-align: center;
+            margin: 3%;
+            border-radius: 50px;
+            font-family: cursive;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgb(141, 139, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+
+        h2 {
+            color: #000000;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        header {
+            background-color: #7a7a7a;
+            color: #000000;
+            text-align: center;
+            padding: 1em;
+            border-radius: 30px;
+            margin-top: 5%;
+            box-shadow: 4px 5px 20px white;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .event-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #d6dcb0;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.772);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .event-card:hover {
+            transform: scale(1.07);
+        }
+
+        .event-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .event-details {
+            margin-top: 10px;
+            color: #313131;
+        }
+
+        .book-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="left">
+            <img src="bookkar.png" alt="">
+            <input type="text" placeholder="Search for Places, Movies, Matches and more....">
+        </div>
+    </div>
+    <div class="options">
+        <a href="new.html"><div class="click">Home</div></a>
+        <a href="places.html"><div class="click">Places</div></a>
+        <a href="movies.html"><div class="click">Movies</div></a>
+        <a href="matches.html"><div class="click">Matches</div></a>
+        <a href="about.html"><div class="click">AboutUs</div></a>
+    </div>
+    <header>
+        <h1>Book-kar - Sports Ticket Booking</h1>
+    </header>
+    <section>
+        <div class="event-card">
+            <div class="event-title">Cricket Match - India vs. Australia</div>
+            <div class="event-details">
+                <p>Date: 15th March 2024</p>
+                <p>Time: 7:00 PM</p>
+                <p>Venue: XYZ Stadium</p>
+            </div>
+            <button class="book-button">Book Now</button>
+        </div>
+
+        <div class="event-card">
+            <div class="event-title">Football Match - Real Madrid vs. Barcelona</div>
+            <div class="event-details">
+                <p>Date: 20th March 2024</p>
+                <p>Time: 8:30 PM</p>
+                <p>Venue: ABC Stadium</p>
+            </div>
+            <button class="book-button">Book Now</button>
+        </div>
+
+        <div class="event-card">
+            <div class="event-title">Cricket Match - England vs. Pakistan</div>
+            <div class="event-details">
+                <p>Date: 25th March 2024</p>
+                <p>Time: 2:30 PM</p>
+                <p>Venue: ABD Stadium</p>
+            </div>
+            <button class="book-button">Book Now</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="fot"><a href=""><img src="bookkar.png" alt=""></a></div>
+        <hr>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yatish_ydv" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/yatishkumar-" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><img src="twit.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>

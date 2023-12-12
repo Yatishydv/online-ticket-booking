@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <style>
+           body{
+            background-color: black;
+        }
+        .head{
+            /* background-color: rgb(19, 52, 216); */
+
+            background-image: url("indianculture.jpg");
+            background-size: 300px;
+
+        }
+        .left{
+            display: flex;
+            height: 100px;
+            width:auto;
+            /* background-color: blue; */
+        }
+        .left img{
+            height: auto;
+            width: auto;
+            margin-top: 0px;
+        }
+        .left input[type="text"]{
+            width: 400px;
+            height: 20px;
+            margin-top: 40px;
+        }
+        .options{
+            color: aliceblue;
+            display: flex;
+            background-color: rgba(234, 255, 0, 0.352);
+        }
+        .click{
+            margin-right: 5%;
+            margin-left: 12%;
+            font-size: medium;
+        }
+        .click:hover{
+            color: rgba(34, 255, 0, 0.783);
+        }
+        .options a{
+            margin-left: 9%;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        footer {
+            background-color: #f7d19b6e;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-links a img {
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
+            
+        }
+        .fot img{
+            height: 50px;
+
+        }
+        hr{
+            width: 200px;
+            border-color: black;
+            height: 3px;
+            color: black;
+            background-color: black;
+            border-radius: 100px;
+
+        }
+        .headp{
+            background-color: #d5d0bc;
+            text-align: center;
+            margin: 3%;
+            border-radius: 50px;
+            font-family: cursive;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgb(141, 139, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+
+        h2 {
+            color: #000000;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="left">
+            <img src="bookkar.png" alt="">
+            <input type="text" placeholder="Search for Places, Movies, Matches and more....">
+        </div>
+    </div>
+    <div class="options">
+        <a href="new.html"><div class="click">Home</div></a>
+        <a href="places.html"><div class="click">Places</div></a>
+        <a href="movies.html"><div class="click">Movies</div></a>
+        <a href="matches.html"><div class="click">Matches</div></a>
+        <a href="about.html"><div class="click">AboutUs</div></a>
+    </div>
+    <div class="container">
+        <h2>Book Tickets for Movies</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tickets">Name of movie:</label>
+            <select id="tickets" name="tickets" required>
+                <option value="">Select your movie</option>
+                <option value="1">Jawan</option>
+                <option value="2">Gadar 2</option>
+                <option value="3">Pathaan</option>
+                <option value="4">Baahubali 2 The Conclusion</option>
+                <option value="">KGF Chapter 2</option>
+                <option value="">Dangal</option>
+                <option value="">Sanju</option>
+                <option value="">PK</option>
+                <option value="">Tiger Zinda Hai</option>
+                <option value="">Bajrangi Bhaijaan</option>
+                <option value="">War</option>
+                <option>Padmaavat</option>
+                <option>Sultan</option>
+                <option>Kabir Singh</option>
+                <option>Tanhaji: The Unsung Warrior</option>
+                <option>RRR</option>
+                <option>Dhoom 3</option>
+                <option>The Kashmir Files</option>
+                <option>Brahmastra Part One: Shiva</option>
+                <option>URI The Surgical Strike</option>
+                <option value="">Simmba</option>
+                <option value="">Drishyam 2</option>
+                <option value="">The Kerala Story</option>
+                <option value="">Kick</option>
+                <option value="">Krrish 3</option>
+                <option value="">Chennai Express</option>
+                <option value="">Bharat</option>
+                <option value="">Housefull 4</option>
+                <option value="">Prem Ratan Dhan Payo</option>
+                <option value="">Golmaal Again</option>
+            </select>
+    
+            <label for="tickets">Number of Tickets:</label>
+            <select id="tickets" name="tickets" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+    
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="fot"><a href=""><img src="bookkar.png" alt=""></a></div>
+        <hr>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yatish_ydv" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><img src="twit.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>
